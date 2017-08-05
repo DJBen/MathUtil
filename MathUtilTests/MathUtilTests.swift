@@ -44,6 +44,7 @@ class MathUtilTests: XCTestCase {
         XCTAssertEqual(dms.values[0], 26)
         XCTAssertEqual(dms.values[1], 25)
         XCTAssertEqualWithAccuracy(dms.values[2], 55.2094, accuracy: 1e-2)
+        XCTAssertEqualWithAccuracy(dms.value, -26.432002, accuracy: 1e-3)
         XCTAssertEqual(dms.description, "-26° 25′ 55″")
     }
 

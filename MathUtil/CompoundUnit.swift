@@ -15,7 +15,7 @@ public class CompoundUnit: CustomStringConvertible {
     public var decimalNumberFormatter: NumberFormatter?
 
     public var value: Double {
-        return values.enumerated().map { $1 / pow(self.conversion, Double($0)) }.reduce(0, +)
+        return Double(sign) * values.enumerated().map { $1 / pow(self.conversion, Double($0)) }.reduce(0, +)
     }
 
     public init(value: Double) {
