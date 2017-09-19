@@ -1,6 +1,6 @@
 # MathUtil
 
-[![Language](https://img.shields.io/badge/Swift-3.1-orange.svg?style=flat)](https://swift.org)
+[![Language](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://swift.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
@@ -18,7 +18,14 @@
 
 ### Carthage
 
+    # Swift 4.0
+    github "DJBen/MathUtil" ~> 0.2.0
+
+This version is compatible with Swift 4. To use Swift 3.x compatible version, use `0.1.x` instead.
+
+    # Swift 3.x
     github "DJBen/MathUtil" ~> 0.1.0
+
 
 ## Usage
 
