@@ -62,7 +62,7 @@ public class DegreeMinuteSecond: CompoundUnit {
     public override init(value: Double) {
         let (degree, remainderMin) = modf(value)
         let (min, sec) = modf(remainderMin * 60)
-        let sign: Double = degree >= 0 ? 1 : -1
+        let sign: Double = degree >= 0 && min >= 0 && sec >= 0 ? 1 : -1
         super.init(sign: Int(sign), values: [sign * degree, sign * min, sign * sec * 60], conversion: 60)
     }
 
