@@ -77,5 +77,9 @@ class AngleTests: XCTestCase {
         XCTAssertEqual(hourAngle.hour, 0)
         XCTAssertEqual(hourAngle.minute, 17)
         XCTAssertEqual(hourAngle.second, 7, accuracy: accuracy)
+        XCTAssertEqual(sin(radianAngle), 0, accuracy: accuracy)
+        XCTAssertEqual(cos(r2), cos(Double.pi * 1.4), accuracy: accuracy)
+        XCTAssertEqual(cos(r2), cos(DegreeAngle(radianAngle: r2)), accuracy: accuracy)
+        XCTAssertEqual(tan(hourAngle), tan(RadianAngle(hourAngle: hourAngle)), accuracy: accuracy)
     }
 }
