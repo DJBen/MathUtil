@@ -7,7 +7,7 @@
 //
 
 public class Angle: Equatable, CustomStringConvertible {
-    public let value: Double
+    public internal(set) var value: Double
 
     public var wrappedValue: Double {
         fatalError("This instance variable should be subclassed")
@@ -17,7 +17,7 @@ public class Angle: Equatable, CustomStringConvertible {
         return AngleConverter.self
     }
 
-    public init(_ value: Double) {
+    public required init(_ value: Double) {
         self.value = value
     }
 
@@ -59,4 +59,3 @@ class AngleConverter {
         fatalError("This method should be subclassed")
     }
 }
-

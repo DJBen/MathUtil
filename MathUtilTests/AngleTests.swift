@@ -63,4 +63,19 @@ class AngleTests: XCTestCase {
         XCTAssertEqual(degreeAngle.value, -26.432002, accuracy: 1e-3)
         XCTAssertEqual(degreeAngle.compoundDescription, "-26° 25′ 55″")
     }
+
+    func testMath() {
+        var radianAngle = RadianAngle(Double.pi * 3 / 2)
+        radianAngle += RadianAngle(Double.pi / 2)
+        XCTAssertEqual(radianAngle.value, Double.pi * 2)
+        var r2 = radianAngle * 2.5
+        XCTAssertEqual(r2.wrappedValue, Double.pi)
+        r2 -= RadianAngle(Double.pi * 1.6)
+        XCTAssertEqual(r2.wrappedValue, Double.pi * (2 - 0.6))
+        var hourAngle = HourAngle(hour: 23, minute: 4, second: 9)
+        hourAngle += HourAngle(hour: 1, minute: 12, second: 58)
+        XCTAssertEqual(hourAngle.hour, 0)
+        XCTAssertEqual(hourAngle.minute, 17)
+        XCTAssertEqual(hourAngle.second, 7, accuracy: accuracy)
+    }
 }
