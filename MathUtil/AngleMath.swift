@@ -37,3 +37,27 @@ public func *=<T: Angle>(lhs: inout T, constant: Double) {
 public func /=<T: Angle>(lhs: inout T, constant: Double) {
     lhs.value /= constant
 }
+
+public func sin(_ angle: Angle) -> Double {
+    return sin(RadianAngle.converter.valueFromAngle(angle))
+}
+
+public func cos(_ angle: Angle) -> Double {
+    return cos(RadianAngle.converter.valueFromAngle(angle))
+}
+
+public func sinh(_ angle: Angle) -> Double {
+    return sinh(RadianAngle.converter.valueFromAngle(angle))
+}
+
+public func cosh(_ angle: Angle) -> Double {
+    return cosh(RadianAngle.converter.valueFromAngle(angle))
+}
+
+public func tan(_ angle: Angle) -> Double {
+    return tan(RadianAngle.converter.valueFromAngle(angle))
+}
+
+public func tanh(_ angle: Angle) -> Double {
+    return tanh(RadianAngle.converter.valueFromAngle(angle))
+}

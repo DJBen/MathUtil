@@ -58,4 +58,16 @@ class AngleConverter {
     class func valueFromDegree(_ degree: Double) -> Double {
         fatalError("This method should be subclassed")
     }
+
+    class func valueFromAngle(_ angle: Angle) -> Double {
+        if angle is RadianAngle {
+            return valueFromRadian(angle.value)
+        } else if angle is DegreeAngle {
+            return valueFromDegree(angle.value)
+        } else if angle is HourAngle {
+            return valueFromHour(angle.value)
+        } else {
+            fatalError("Base abstract class Angle is not accepted")
+        }
+    }
 }
