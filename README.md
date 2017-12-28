@@ -7,10 +7,11 @@
 
 ## Overview
 
+- Strongly typed radian, degree and hour angle classes and conversions.
 - 3x3 matrix, 4x4 matrix and quaternion support.
   - Conversion between matrix, quaternion, Euler angle, and axis and rotation.
   - Matrix, quaternion multiplication, inversion and scalar multiplication.
-  - Overload operators to be succinct.
+  - Overloaded multiplication and division operators in contexts of matrix and quaternion.
 - Interpolation support for linear, quadratic and cubic curves with ease-in, ease-out, ease-in-out modes.
 - Detect whether two line segments cross each other.
 - Operator overloading for `SCNVector3` and more.
@@ -20,7 +21,7 @@
 ### Carthage
 
     # Swift 4.0
-    github "DJBen/MathUtil" ~> 0.2.0
+    github "DJBen/MathUtil" ~> 0.3.0
 
 This version is compatible with Swift 4. To use Swift 3.x compatible version, use `0.1.x` instead.
 
@@ -30,24 +31,26 @@ This version is compatible with Swift 4. To use Swift 3.x compatible version, us
 
 ## Usage
 
-### Conversions
-#### Radian-degree conversion
+### Strongly Typed Angles
+#### Radian-degree Angle Conversion
 ```swift
-radians(degrees: 30)             // 0.523...
-degrees(radians: Double.Pi / 2)  // 90
+RadianAngle(degreeAngle: DegreeAngle(30)).value // 0.523...
+DegreeAngle(radianAngle: RadianAngle(Double.Pi / 2)).value  // 90
 ```
-#### Angle-hour conversion and formatting
+#### Hour Angle Conversion and Formatting
 ```swift
 // Sirius' right ascension is 6h 45m 9s
-let deg = degrees(hours: 6, minutes: 45, seconds: 9) // 101.2875
+let deg = DegreeAngle(hour: 6, minute: 45, second: 9)
+deg.value // 101.2875
 
-let hms = HourMinuteSecond(value: deg)
-hms.decimalNumberFormatter = NumberFormatter()
-print(hms) // 6h 45m 9s
+let hourAngle = HourAngle(value: deg)
+// Use any custom number formatters for different decimal lengths
+hourAngle.compoundDecimalNumberFormatter = NumberFormatter()
+print(hourAngle.compoundDescription) // 6h 45m 9s
 
 // Antares' right ascension is −26.432002 degrees
-let dms = DegreeMinuteSecond(value: -26.432002)
-print(dms) // -26° 25′ 55″
+let degreeAngle = DegreeAngle(-26.432002)
+print(degreeAngle.compoundDescription) // -26° 25′ 55″
 ```
 
 ### Matrix, Quaternion and Vector Arithmetics
