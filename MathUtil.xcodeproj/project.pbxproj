@@ -11,6 +11,8 @@
 		FC1B421F1FF4BF6200779D12 /* RadianAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2F01FF433BB0020480C /* RadianAngle.swift */; };
 		FC1B42201FF4BF6500779D12 /* DegreeAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2F41FF433CF0020480C /* DegreeAngle.swift */; };
 		FC1B42211FF4BF6700779D12 /* HourAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2F81FF4485F0020480C /* HourAngle.swift */; };
+		FC1B42231FF4C42E00779D12 /* AngleMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B42221FF4C42E00779D12 /* AngleMath.swift */; };
+		FC1B42251FF4C94D00779D12 /* AngleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B42241FF4C94D00779D12 /* AngleTests.swift */; };
 		FC3BE2FB1FF48FA30020480C /* CompoundAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2FA1FF48FA30020480C /* CompoundAngle.swift */; };
 		FC63124A1F21DF4500FE23E0 /* MathUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = FC6312481F21DF4500FE23E0 /* MathUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC6312591F21DF8E00FE23E0 /* CGVector+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6312501F21DF8E00FE23E0 /* CGVector+Util.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC1B42221FF4C42E00779D12 /* AngleMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleMath.swift; sourceTree = "<group>"; };
+		FC1B42241FF4C94D00779D12 /* AngleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleTests.swift; sourceTree = "<group>"; };
 		FC3BE2F01FF433BB0020480C /* RadianAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadianAngle.swift; sourceTree = "<group>"; };
 		FC3BE2F21FF433C10020480C /* Angle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
 		FC3BE2F41FF433CF0020480C /* DegreeAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreeAngle.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 				FC6312571F21DF8E00FE23E0 /* VectorMath+CoreMotion.swift */,
 				FC6312581F21DF8E00FE23E0 /* VectorMath+SceneKit.swift */,
 				FC3BE2F21FF433C10020480C /* Angle.swift */,
+				FC1B42221FF4C42E00779D12 /* AngleMath.swift */,
 				FC3BE2FA1FF48FA30020480C /* CompoundAngle.swift */,
 				FC3BE2F01FF433BB0020480C /* RadianAngle.swift */,
 				FC3BE2F41FF433CF0020480C /* DegreeAngle.swift */,
@@ -129,6 +134,7 @@
 			children = (
 				FC6312711F21DFD600FE23E0 /* VectorMathTests.swift */,
 				FC6312731F21E0EE00FE23E0 /* MathUtilTests.swift */,
+				FC1B42241FF4C94D00779D12 /* AngleTests.swift */,
 				FC63126A1F21DF9800FE23E0 /* Info.plist */,
 			);
 			path = MathUtilTests;
@@ -259,6 +265,7 @@
 				FC1B42211FF4BF6700779D12 /* HourAngle.swift in Sources */,
 				FC63125A1F21DF8E00FE23E0 /* Double+Util.swift in Sources */,
 				FC6312601F21DF8E00FE23E0 /* VectorMath+CoreMotion.swift in Sources */,
+				FC1B42231FF4C42E00779D12 /* AngleMath.swift in Sources */,
 				FC1B421F1FF4BF6200779D12 /* RadianAngle.swift in Sources */,
 				FC6312591F21DF8E00FE23E0 /* CGVector+Util.swift in Sources */,
 				FC63125B1F21DF8E00FE23E0 /* Easing.swift in Sources */,
@@ -272,6 +279,7 @@
 			files = (
 				FC6312721F21DFD600FE23E0 /* VectorMathTests.swift in Sources */,
 				FC6312741F21E0EE00FE23E0 /* MathUtilTests.swift in Sources */,
+				FC1B42251FF4C94D00779D12 /* AngleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
