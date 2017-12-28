@@ -82,4 +82,10 @@ class AngleTests: XCTestCase {
         XCTAssertEqual(cos(r2), cos(DegreeAngle(radianAngle: r2)), accuracy: accuracy)
         XCTAssertEqual(tan(hourAngle), tan(RadianAngle(hourAngle: hourAngle)), accuracy: accuracy)
     }
+
+    func testInitializingFromLiteral() {
+        let radianAngle: RadianAngle = 3.1415926
+        let hourAngle: HourAngle = 12.0
+        XCTAssertEqual(HourAngle(radianAngle: radianAngle).value, hourAngle.value, accuracy: 1e-3)
+    }
 }

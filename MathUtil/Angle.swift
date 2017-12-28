@@ -6,7 +6,9 @@
 //  Copyright © 2017 Sihao. All rights reserved.
 //
 
-public class Angle: Equatable, CustomStringConvertible {
+public class Angle: Equatable, CustomStringConvertible, ExpressibleByFloatLiteral {
+    public typealias FloatLiteralType = Double
+
     public internal(set) var value: Double
 
     public var wrappedValue: Double {
@@ -15,6 +17,10 @@ public class Angle: Equatable, CustomStringConvertible {
 
     class var converter: AngleConverter.Type {
         return AngleConverter.self
+    }
+
+    public required init(floatLiteral: FloatLiteralType) {
+        self.value = floatLiteral
     }
 
     public required init(_ value: Double) {
