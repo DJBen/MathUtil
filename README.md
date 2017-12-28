@@ -3,6 +3,7 @@
 [![Language](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://swift.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Build Status](https://travis-ci.org/DJBen/MathUtil.svg?branch=master)](https://travis-ci.org/DJBen/MathUtil)
 
 ## Overview
 
