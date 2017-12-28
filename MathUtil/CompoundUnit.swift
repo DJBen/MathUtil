@@ -33,6 +33,7 @@ public class CompoundUnit: CustomStringConvertible {
     }
 }
 
+@available(*, deprecated)
 public class HourMinuteSecond: CompoundUnit {
 
     /// Initialize from degrees value
@@ -54,6 +55,7 @@ public class HourMinuteSecond: CompoundUnit {
     }
 }
 
+@available(*, deprecated)
 public class DegreeMinuteSecond: CompoundUnit {
 
     /// Initialize from degree value
