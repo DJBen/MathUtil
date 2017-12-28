@@ -47,7 +47,7 @@ public class RadianAngle: Angle {
         return RadianAngleConverter.self
     }
 
-    var wrapMode: WrapMode = .range0_2π
+    public var wrapMode: WrapMode = .range0_2π
 
     public override var wrappedValue: Double {
         return wrapMode.wrap(value)

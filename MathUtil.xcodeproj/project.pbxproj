@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC3BE2F11FF433BB0020480C /* RadianAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2F01FF433BB0020480C /* RadianAngle.swift */; };
-		FC3BE2F31FF433C10020480C /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2F21FF433C10020480C /* Angle.swift */; };
-		FC3BE2F51FF433CF0020480C /* DegreeAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2F41FF433CF0020480C /* DegreeAngle.swift */; };
-		FC3BE2F71FF43E770020480C /* AngleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2F61FF43E770020480C /* AngleTests.swift */; };
-		FC3BE2F91FF4485F0020480C /* HourAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2F81FF4485F0020480C /* HourAngle.swift */; };
+		FC1B421E1FF4BF5C00779D12 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2F21FF433C10020480C /* Angle.swift */; };
+		FC1B421F1FF4BF6200779D12 /* RadianAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2F01FF433BB0020480C /* RadianAngle.swift */; };
+		FC1B42201FF4BF6500779D12 /* DegreeAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2F41FF433CF0020480C /* DegreeAngle.swift */; };
+		FC1B42211FF4BF6700779D12 /* HourAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2F81FF4485F0020480C /* HourAngle.swift */; };
 		FC3BE2FB1FF48FA30020480C /* CompoundAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BE2FA1FF48FA30020480C /* CompoundAngle.swift */; };
 		FC63124A1F21DF4500FE23E0 /* MathUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = FC6312481F21DF4500FE23E0 /* MathUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC6312591F21DF8E00FE23E0 /* CGVector+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6312501F21DF8E00FE23E0 /* CGVector+Util.swift */; };
@@ -43,7 +42,6 @@
 		FC3BE2F01FF433BB0020480C /* RadianAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadianAngle.swift; sourceTree = "<group>"; };
 		FC3BE2F21FF433C10020480C /* Angle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
 		FC3BE2F41FF433CF0020480C /* DegreeAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreeAngle.swift; sourceTree = "<group>"; };
-		FC3BE2F61FF43E770020480C /* AngleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleTests.swift; sourceTree = "<group>"; };
 		FC3BE2F81FF4485F0020480C /* HourAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourAngle.swift; sourceTree = "<group>"; };
 		FC3BE2FA1FF48FA30020480C /* CompoundAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundAngle.swift; sourceTree = "<group>"; };
 		FC6312451F21DF4500FE23E0 /* MathUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MathUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,13 +249,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC63125F1F21DF8E00FE23E0 /* VectorMath.swift in Sources */,
+				FC1B421E1FF4BF5C00779D12 /* Angle.swift in Sources */,
 				FC63125C1F21DF8E00FE23E0 /* Intersection.swift in Sources */,
 				FC6312611F21DF8E00FE23E0 /* VectorMath+SceneKit.swift in Sources */,
 				FC63125E1F21DF8E00FE23E0 /* SphericalMath.swift in Sources */,
 				FCB2C1391F35BE82002288BE /* CompoundUnit.swift in Sources */,
 				FC63125D1F21DF8E00FE23E0 /* SCNVector3+Util.swift in Sources */,
+				FC1B42201FF4BF6500779D12 /* DegreeAngle.swift in Sources */,
+				FC1B42211FF4BF6700779D12 /* HourAngle.swift in Sources */,
 				FC63125A1F21DF8E00FE23E0 /* Double+Util.swift in Sources */,
 				FC6312601F21DF8E00FE23E0 /* VectorMath+CoreMotion.swift in Sources */,
+				FC1B421F1FF4BF6200779D12 /* RadianAngle.swift in Sources */,
 				FC6312591F21DF8E00FE23E0 /* CGVector+Util.swift in Sources */,
 				FC63125B1F21DF8E00FE23E0 /* Easing.swift in Sources */,
 				FC3BE2FB1FF48FA30020480C /* CompoundAngle.swift in Sources */,

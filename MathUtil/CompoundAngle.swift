@@ -6,7 +6,7 @@
 //  Copyright © 2017 Sihao. All rights reserved.
 //
 
-protocol CompoundAngle {
+public protocol CompoundAngle {
     var sign: Int { get }
     var components: [Double] { get }
     var compoundDescription: String { get }

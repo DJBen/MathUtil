@@ -49,7 +49,7 @@ public class DegreeAngle: Angle, CompoundAngle {
         return DegreeAngleConverter.self
     }
 
-    var wrapMode: WrapMode = .range0_360
+    public var wrapMode: WrapMode = .range0_360
 
     public override var wrappedValue: Double {
         return wrapMode.wrap(value)

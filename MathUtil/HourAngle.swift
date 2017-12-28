@@ -36,7 +36,7 @@ public class HourAngle: Angle, CompoundAngle {
         return HourAngleConverter.self
     }
 
-    var wrapMode: WrapMode = .range0_24h
+    public var wrapMode: WrapMode = .range0_24h
 
     public override var wrappedValue: Double {
         return wrapMode.wrap(value)
