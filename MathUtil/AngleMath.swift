@@ -6,6 +6,10 @@
 //  Copyright © 2017 Sihao. All rights reserved.
 //
 
+public prefix func -<T: Angle>(angle: T) -> T {
+    return T.init(-angle.value)
+}
+
 public func +<T: Angle>(lhs: T, rhs: T) -> T {
     return T.init(lhs.value + rhs.value)
 }
