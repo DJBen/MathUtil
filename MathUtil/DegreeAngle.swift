@@ -55,19 +55,27 @@ public class DegreeAngle: Angle, CompoundAngle {
         return wrapMode.wrap(value)
     }
 
-    public var degree: Double {
+    public var degreeComponent: Double {
         return components[0]
     }
 
-    public var minute: Double {
+    public var minuteComponent: Double {
         return components[1]
     }
 
-    public var second: Double {
+    public var secondComponent: Double {
         return components[2]
     }
 
-    public convenience init(degree: Double, minute: Double = 0, second: Double = 0) {
+    public var inMinutes: Double {
+        return wrappedValue * 60
+    }
+
+    public var inSeconds: Double {
+        return wrappedValue * 3600
+    }
+
+    public convenience init(degree: Double = 0, minute: Double = 0, second: Double = 0) {
         let fractionalDegree = degree + minute / 60 + second / 3600
         self.init(fractionalDegree)
     }
