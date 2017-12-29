@@ -64,7 +64,7 @@ public class HourAngle: Angle, CompoundAngle {
     public var compoundDecimalNumberFormatter: NumberFormatter?
 
     public var sign: Int {
-        return value >= 0 ? 1 : -1
+        return wrappedValue >= 0 ? 1 : -1
     }
 
     public var components: [Double] {

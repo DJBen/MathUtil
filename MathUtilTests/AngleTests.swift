@@ -50,6 +50,13 @@ class AngleTests: XCTestCase {
         XCTAssertEqual(hourAngle.components[2], 9, accuracy: 0.5)
         XCTAssertEqual(hourAngle.value, 6.7525, accuracy: accuracy)
         XCTAssertEqual(hourAngle.compoundDescription, "6h 45m 9s")
+
+        let h2 = -HourAngle(hour: 8, minute: 9, second: 50)
+        // Hour angle compound unit should be auto wrapped
+        XCTAssertEqual(h2.sign, 1)
+        XCTAssertEqual(h2.components[0], 15)
+        XCTAssertEqual(h2.components[1], 50)
+        XCTAssertEqual(h2.components[2], 10, accuracy: accuracy)
     }
 
     func testDegreeAngleCompoundDisplay() {
